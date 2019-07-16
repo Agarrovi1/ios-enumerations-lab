@@ -290,6 +290,18 @@ print("I need \(coinsInDollar) nickles to make a dollar")
 
 a) Write an enum called `DayOfWeek` to represent the days of the week with a raw value of type String.
 
+```swift
+enum DayOfWeek: String {
+case Monday
+case Tuesday
+case Wednesday
+case Thursday
+case Friday
+case Saturday
+case Sunday
+}
+```
+
 b) Given the array `poorlyFormattedDays`, write code that will produce an array of enums that match the days.
 
 `let poorlyFormattedDays = ["MONDAY", "wednesday", "Sunday", "monday", "Tuesday", "WEDNESDAY", "thursday", "SATURDAY", "tuesday", "FRIDAy", "Wednesday", "Monday", "Friday", "sunday"]`
