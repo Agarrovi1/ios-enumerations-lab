@@ -423,11 +423,9 @@ case pikachu(String)
 case eevee(String)
 case mew(String)
 case bulbasaur(String,String)
-}
 
-var myPokemon = Pokemon.pikachu("electric")
-
-switch myPokemon {
+func myPartnerAndItsType() {
+switch self {
 case .eevee(let type):
 print("My partner Pokemon is Eevee an its type is \(type)")
 case .mew(let type):
@@ -437,4 +435,9 @@ print("My partner Pokemon is Bulbasaur an its types are \(type1) and \(type2)")
 case .pikachu(let type):
 print("My partner Pokemon is Pikachu an its type is \(type)")
 }
+}
+}
+
+var myPokemon = Pokemon.pikachu("electric")
+myPokemon.myPartnerAndItsType()
 ```
