@@ -87,7 +87,7 @@ c) Re-write `Shape` so that each case has an associated value of type Int that w
 ```swift
 enum Shape {
 case triangle(Int)
-case rectangle(Int)
+case rectangle(Int,Int)
 case square(Int)
 case pentagon(Int)
 case hexagon(Int)
@@ -98,8 +98,8 @@ var sampleShape = Shape.triangle(3)
 switch sampleShape {
 case .triangle(let length):
 print("perimeter is \(length * 3)")
-case .rectangle(let length):
-print("perimeter is \(length * 6)")
+case .rectangle(let length1, let length2):
+print("perimeter is \((length1 * 2) + (length2 * 2)")
 case .square(let length):
 print("perimeter is \(length * 4)")
 case .pentagon(let length):
